@@ -4,12 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap w/ Vite</title>
+    <script type="module" src="main.ts"></script>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <div class="min-vh-100 d-flex justify-content-center align-items-center">
+      <form class="form-signin min-w-100" action="/profile/index.html">
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="your@email.com"
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="password"
+          />
+          <label for="password">Password</label>
+        </div>
+        <div class="mb-2">
+          <label>
+            <input type="checkbox" name="remember" id="remember" />
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="w-100 btn btn-lg btn-primary">Sign in</button>
+      </form>
+      <!-- sign up form -->
+      <!-- <form>
+        <label for="email"> Email address </label>
+        <input type="email" name="email" />
+        <label for="password"> Password </label>
+        <input type="password" name="password" />
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </form> -->
     </div>
-    <script type="module" src="main.ts"></script>
   </body>
 </html>
