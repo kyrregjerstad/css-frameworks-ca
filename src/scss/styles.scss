@@ -125,22 +125,4 @@ img {
     object-fit: cover;
     overflow: hidden;
   }
-
-  .profile-img {
-    position: absolute;
-    width: 150px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 9999px;
-    border: 5px solid white;
-    transform: translateY(-50%);
-  }
-
-  .header-info {
-    // margin-top: 75px;
-
-    .name-and-location {
-      margin-left: 150px;
-    }
-  }
 }
