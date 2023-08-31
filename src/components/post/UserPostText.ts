@@ -10,5 +10,4 @@ class UserPostText extends HTMLElement {
   }
 }
 
-// Define the new element
 customElements.define("user-post-text", UserPostText);

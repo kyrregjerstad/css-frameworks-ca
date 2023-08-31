@@ -1,0 +1,14 @@
+$max-width-map: (
+  "xs": 10rem,
+  "sm": 18.75rem,
+  "md": 37.5rem,
+  "lg": 56.25rem,
+  "xl": 75rem,
+  "2xl": 100rem,
+);
+
+@each $key, $value in $max-width-map {
+  .max-w-#{$key} {
+    max-width: $value;
+  }
+}

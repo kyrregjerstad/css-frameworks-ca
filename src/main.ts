@@ -1,6 +1,7 @@
-// Import our custom CSS
 import "./scss/styles.scss";
-
-// @ts-ignore
-import * as bootstrap from "bootstrap";
 import "./utils/register-components.ts";
+import { Popover } from "bootstrap";
+
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
+  new Popover(popover);
+});

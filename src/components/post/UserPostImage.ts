@@ -24,5 +24,4 @@ class UserPostImage extends HTMLElement {
   }
 }
 
-// Define the new element
 customElements.define("user-post-image", UserPostImage);
