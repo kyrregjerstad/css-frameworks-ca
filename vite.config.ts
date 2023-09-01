@@ -12,4 +12,13 @@ export default {
     port: 8080,
     hot: true,
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "src/index.html"),
+        feed: path.resolve(__dirname, "src/feed/index.html"),
+        profile: path.resolve(__dirname, "src/profile/index.html"),
+      },
+    },
+  },
 };
